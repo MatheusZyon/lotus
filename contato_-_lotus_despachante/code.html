@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato e Localização - Lotus Despachante</title>
+<!-- Fonts and Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f2f20d",
+              "primary-foreground": "#181811",
+              "background-light": "#f8f8f5",
+              "background-dark": "#222210",
+              "surface-dark": "#2d2d1b",
+              "surface-light": "#ffffff",
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "2xl": "1rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 font-display text-slate-900 min-h-screen flex flex-col antialiased">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 bg-white border-b border-slate-100 p-4"><div class="w-full flex justify-center py-2"><img alt="Lotus Despachante Logo" class="h-12" src="{{DATA:IMAGE:IMAGE_9}}"/></div></header>
+<main class="flex-1 w-full max-w-md mx-auto flex flex-col pb-8">
+<!-- Map Section -->
+<div class="relative w-full aspect-[4/3] bg-surface-dark">
+<div class="w-full h-full bg-center bg-cover opacity-80" data-alt="Map view of Av. Cupecê showing street layout" data-location="São Paulo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAmQ3b2n6zfLF5SFlBDe924a08JTGQOCrKOBDB6bet8_Ej0yqLrz1yEYsywP0QA8MaEOqpitJCa8jVe6A0DXQ9gtmFfap9Z9GUMdP8k34nSGchdjN_60bbjxu5QlgViVHSn_DPMh5dzd2cSxe0uSa4meLxU-lv1QJFjMzIdE_EA-lEygtaLqDReDnZ6lbPVMsQGhL_lmFLmsvyOCSq3ext_achV7szDp9tHj6tgDrcQWfIM6MxXx_zy-JkIMFedpwWRfoKr6-q-CnA');"></div>
+<!-- Map Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent"></div>
+<!-- Floating Address Card -->
+<div class="absolute bottom-4 left-4 right-4 bg-white p-4 rounded-xl shadow-lg border border-slate-100">
+<div class="flex items-start gap-3">
+<div class="bg-primary/20 p-2 rounded-lg shrink-0">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">location_on</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-slate-900 dark:text-white mb-1">Nosso Endereço</h3>
+<p class="text-xs text-slate-600 leading-relaxed">
+                            Av. Cupecê, 2831 - Jardim Prudência<br/>São Paulo - SP
+                        </p>
+<a class="mt-2 text-xs font-bold text-primary flex items-center gap-1 hover:underline decoration-primary" href="#">
+                            Abrir no Maps <span class="material-symbols-outlined" style="font-size: 14px;">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Operating Hours -->
+<div class="px-4 py-6">
+<div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-slate-100">
+<div class="bg-primary/20 p-2 rounded-full shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-size: 20px;">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-primary uppercase tracking-wider mb-0.5">Horário de Atendimento</span>
+<span class="text-sm font-medium text-slate-700">Segunda a Sexta, 08:30 às 17:30</span>
+</div>
+<div class="ml-auto">
+<span class="inline-flex items-center rounded-full bg-green-500/20 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/30">Aberto</span>
+</div>
+</div>
+</div>
+<!-- Quick Actions Grid -->
+<div class="px-4 space-y-3">
+<h2 class="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="w-1 h-5 bg-primary rounded-full"></span>
+                Canais de Atendimento
+            </h2>
+<!-- WhatsApp (Primary) -->
+<button class="w-full group relative flex items-center justify-between overflow-hidden rounded-xl bg-primary p-4 transition-all active:scale-[0.98]">
+<div class="flex items-center gap-3 z-10">
+<span class="material-symbols-outlined text-primary-foreground" style="font-size: 24px;">chat</span>
+<div class="flex flex-col items-start text-primary-foreground">
+<span class="text-xs font-semibold opacity-80 uppercase">WhatsApp</span>
+<span class="text-base font-bold tracking-wide">Iniciar Conversa</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-foreground z-10" style="font-size: 20px;">arrow_forward</span>
+</button>
+<!-- Phones Grid -->
+<div class="grid grid-cols-2 gap-3">
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-white p-4 border border-slate-100 active:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">call</span>
+<div class="text-center">
+<span class="block text-xs text-slate-500 dark:text-slate-400 mb-1">Fixo 1</span>
+<span class="block text-sm font-bold text-slate-900 dark:text-white">(11) 5562-4318</span>
+</div>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-white p-4 border border-slate-100 active:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">call</span>
+<div class="text-center">
+<span class="block text-xs text-slate-500 dark:text-slate-400 mb-1">Fixo 2</span>
+<span class="block text-sm font-bold text-slate-900 dark:text-white">(11) 5565-3005</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="mt-8 px-4">
+<div class="rounded-2xl bg-white p-6 border border-slate-100 shadow-sm">
+<div class="mb-6">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-1">Solicite um Orçamento</h2>
+<p class="text-sm text-slate-500 dark:text-slate-400">Preencha os dados abaixo e entraremos em contato.</p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<!-- Name Input -->
+<div class="space-y-1.5">
+<label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 ml-1" for="name">Nome Completo</label>
+<div class="relative">
+<input class="block w-full rounded-lg border-0 bg-background-light dark:bg-background-dark/50 px-4 py-3 text-slate-900 dark:text-white shadow-sm ring-1 ring-inset ring-slate-300 dark:ring-white/10 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="name" name="name" placeholder="Seu nome aqui" type="text"/>
+</div>
+</div>
+<!-- Phone Input -->
+<div class="space-y-1.5">
+<label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 ml-1" for="phone">WhatsApp / Celular</label>
+<div class="relative">
+<input class="block w-full rounded-lg border-0 bg-background-light dark:bg-background-dark/50 px-4 py-3 text-slate-900 dark:text-white shadow-sm ring-1 ring-inset ring-slate-300 dark:ring-white/10 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="phone" name="phone" placeholder="(11) 99999-9999" type="tel"/>
+</div>
+</div>
+<!-- Service Select -->
+<div class="space-y-1.5">
+<label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 ml-1" for="service">Interesse</label>
+<div class="relative">
+<select class="block w-full appearance-none rounded-lg border-0 bg-background-light dark:bg-background-dark/50 px-4 py-3 text-slate-900 dark:text-white shadow-sm ring-1 ring-inset ring-slate-300 dark:ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="service" name="service">
+<option>Licenciamento</option>
+<option>Transferência de Veículo</option>
+<option>Primeiro Emplacamento</option>
+<option>Outros Serviços</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" style="font-size: 20px;">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="mt-4 w-full rounded-lg bg-primary px-4 py-3.5 text-sm font-bold text-primary-foreground shadow-sm hover:bg-yellow-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all active:scale-[0.98]" type="submit">
+                        Enviar Mensagem
+                    </button>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto border-t border-slate-100 bg-white py-10 px-4 text-center">
+<div class="text-xs text-slate-500 mb-2">
+<img alt="Lotus Despachante Logo" class="h-12 mx-auto" src="{{DATA:IMAGE:IMAGE_9}}"/>
+</div>
+<p class="text-xs text-slate-500 mb-2">
+            CNPJ: 67.882.686/0001-38
+        </p>
+<p class="text-xs text-slate-500 mb-2">
+            Av. Cupecê, 2831 - Jardim Prudência<br/>São Paulo - SP, CEP 04365-000
+        </p>
+<div class="text-xs text-slate-500 mb-2">
+            © 2024 Lotus Despachante
+        </div>
+</footer>
+</body></html>
