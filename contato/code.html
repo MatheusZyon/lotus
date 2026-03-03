@@ -48,7 +48,7 @@
 </head>
 <body class="bg-slate-50 font-display text-slate-900 min-h-screen flex flex-col antialiased">
 <!-- Sticky Header -->
-<header class="sticky top-0 z-50 bg-white border-b border-slate-100 p-4"><div class="w-full flex justify-center py-2"><img alt="Lotus Despachante Logo" class="h-12" src="{{DATA:IMAGE:IMAGE_9}}"/></div></header>
+<header class="sticky top-0 z-50 bg-white border-b border-slate-100 p-4"><div class="w-full flex justify-center py-2"><img alt="Lotus Despachante Logo" class="h-14 w-auto" src="../assets/logo-oficial.png"/></div></header>
 <main class="flex-1 w-full max-w-md mx-auto flex flex-col pb-8">
 <!-- Map Section -->
 <div class="relative w-full aspect-[4/3] bg-surface-dark">
@@ -95,7 +95,7 @@
                 Canais de Atendimento
             </h2>
 <!-- WhatsApp (Primary) -->
-<button class="w-full group relative flex items-center justify-between overflow-hidden rounded-xl bg-primary p-4 transition-all active:scale-[0.98]">
+<a class="w-full group relative flex items-center justify-between overflow-hidden rounded-xl bg-primary p-4 transition-all active:scale-[0.98]" href="https://wa.me/5511940278651" rel="noopener noreferrer" target="_blank">
 <div class="flex items-center gap-3 z-10">
 <span class="material-symbols-outlined text-primary-foreground" style="font-size: 24px;">chat</span>
 <div class="flex flex-col items-start text-primary-foreground">
@@ -104,7 +104,7 @@
 </div>
 </div>
 <span class="material-symbols-outlined text-primary-foreground z-10" style="font-size: 20px;">arrow_forward</span>
-</button>
+</a>
 <!-- Phones Grid -->
 <div class="grid grid-cols-2 gap-3">
 <button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-white p-4 border border-slate-100 active:bg-primary/5 transition-colors">
@@ -153,6 +153,8 @@
 <option>Licenciamento</option>
 <option>Transferência de Veículo</option>
 <option>Primeiro Emplacamento</option>
+<option>Parcelamento de Débitos no Cartão</option>
+<option>Modificação de Veículos no Documento</option>
 <option>Outros Serviços</option>
 </select>
 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500 dark:text-slate-400">
@@ -171,7 +173,7 @@
 <!-- Footer -->
 <footer class="mt-auto border-t border-slate-100 bg-white py-10 px-4 text-center">
 <div class="text-xs text-slate-500 mb-2">
-<img alt="Lotus Despachante Logo" class="h-12 mx-auto" src="{{DATA:IMAGE:IMAGE_9}}"/>
+<img alt="Lotus Despachante Logo" class="h-12 w-auto mx-auto" src="../assets/logo-oficial.png"/>
 </div>
 <p class="text-xs text-slate-500 mb-2">
             CNPJ: 67.882.686/0001-38
@@ -183,4 +185,7 @@
             © 2024 Lotus Despachante
         </div>
 </footer>
+<a class="fixed bottom-6 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-black/25 transition-transform hover:scale-105 active:scale-95" href="https://wa.me/5511940278651" rel="noopener noreferrer" target="_blank" title="Falar no WhatsApp">
+<span class="material-symbols-outlined text-[30px]">chat</span>
+</a>
 </body></html>
